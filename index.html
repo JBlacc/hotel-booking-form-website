@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>hotel-booking-form-website</title>
+  </head>
+
+  <body>
+    <div id="titles">
+      <div class="main-title">Three Rivers Resort</div>
+      <div class="subtitle">"Pittsburg's Finest Luxery Resort"</div>
+    </div>
+    <div id="reservation-container">
+        <h2 id="reservation-information">Reservation Information</h2>
+        <fieldset class="personal-info-fieldset">
+            <div class="personal-info-header">Personal Information</div>
+            <label class="first-name">First Name: <input type="text" name="first-name" placeholder="First Name" required></label>
+            <label class="last-name">Last Name: <input type="text" name="last-name" placeholder="Last Name" required></label>
+            <label class="email">Email: <input type="email" name="email" placeholder="Email" required></label>
+            <label class="address">Address: <input type="address" name="address" placeholder="Address"></label>
+        </fieldset>
+       
+        <fieldset class="room-info-fieldset">
+            <div id="room-info-header">Room Information</div>
+            <label name="quantity-rooms">How Many Rooms
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </label>
+            
+            <label class="quantity-adults" for="quantity-adults">How Many Adults
+            <select name="quantity-of-adults" >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            </label>
+    
+            <label for="quantity-nights">How Many Nights
+            <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+            </label>
+        </fieldset>
+        </div>
+    </body>
+</html>
