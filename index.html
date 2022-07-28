@@ -11,7 +11,7 @@
 
   <body>
     <div class="info-title">
-      <div class="reservation-info">
+      <div id="personal-info-container">
         <fieldset id="personal-info">
           <div class="personal-header">Personal Information</div>
           <label for="first-name"
@@ -21,15 +21,15 @@
             >Last Name: <input id="last-name" type="text"
           /></label>
           <label for="email"
-            >EMail: <input id="email" type="email" required
+            >E-Mail: <input id="email" type="email" required
           /></label>
           <label for="address"
-            >Address: <input id="address" type="text"
-          /></label>
+            >Address: <input id="address" type="text" placeholder="Street"/> 
+            <input type="text" placeholder="City, State, Zip"></label>
         </fieldset>
       </div>
 
-      <div>
+      <div id="room-info-container">
         <fieldset id="room-info">
           <div class="rooms-header">Room Information</div>
           <label for="rooms"
@@ -60,10 +60,11 @@
               <option value="7">7</option>
             </select>
           </label>
+          <button>Confirm Reservation</button>
         </fieldset>
       </div>
 
-      <div class="title-block">
+      <div id="title-block-container">
         <div id="title">
           <div>Three Rivers Resort</div>
         </div>

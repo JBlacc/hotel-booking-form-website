@@ -1,20 +1,13 @@
-#personal-info, .title-block, #room-info{
-    outline: 2px solid blue;
-}
-
 /* body{
     background-image: url(../images/hotel.jpg);
     background-repeat: no-repeat;
     background-size: 100vw;
-} */
+}
 
 .info-title{
-    display: flex;
-    flex-wrap: wrap;
-    height: 100px;
+    display: grid;
+    grid-template-rows: 250px;
+    grid-template-columns: 12% 12% 70%;
 }
-
-.title{
-    font-size: 20px;
-}
+ */
 
