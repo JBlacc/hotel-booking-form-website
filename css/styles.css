@@ -1,67 +1,20 @@
-body{
+#personal-info, .title-block, #room-info{
+    outline: 2px solid blue;
+}
+
+/* body{
     background-image: url(../images/hotel.jpg);
     background-repeat: no-repeat;
     background-size: 100vw;
-}
+} */
 
-#titles{
+.info-title{
     display: flex;
-    flex-direction: column;
-    width: 100vw;
-    align-items: flex-end;
-    color: rgba(0, 0, 0, 0.852);
-    font-size: 118px;
-    font-weight: bold;
-    outline: 3px solid blue;
+    flex-wrap: wrap;
+    height: 100px;
 }
 
-.main-title{
-    padding-right: 130px;
-}
-
-.subtitle{
-    padding-right: 330px;
-    font-size: 45px;
-    font-weight: normal;
-    font-style: italic;
-} 
-
-
-#reservation-container{
-    display: flex;
-    height:300px;
-    outline: 3px solid blue;
-}
-
-.personal-info-fieldset, .room-info-fieldset{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding-right: 40px;
-    bottom: 145px;
-    width: 230px;
-    font-weight: bold;
-}
-
-.first-name, .last-name, .email, .address{
-    padding-top: 15px;
-}
-.personal-info-header{
-    text-align: center;
-}
-
-#room-info-header{
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-.quantity-adults{
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-#reservation-information{
-    display: block;
-    justify-items: center;
+.title{
+    font-size: 20px;
 }
 

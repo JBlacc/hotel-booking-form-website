@@ -10,50 +10,67 @@
   </head>
 
   <body>
-    <div id="titles">
-      <div class="main-title">Three Rivers Resort</div>
-      <div class="subtitle">"Pittsburg's Finest Luxery Resort"</div>
-    </div>
-    <div id="reservation-container">
-        <h2 id="reservation-information">Reservation Information</h2>
-        <fieldset class="personal-info-fieldset">
-            <div class="personal-info-header">Personal Information</div>
-            <label class="first-name">First Name: <input type="text" name="first-name" placeholder="First Name" required></label>
-            <label class="last-name">Last Name: <input type="text" name="last-name" placeholder="Last Name" required></label>
-            <label class="email">Email: <input type="email" name="email" placeholder="Email" required></label>
-            <label class="address">Address: <input type="address" name="address" placeholder="Address"></label>
+    <div class="info-title">
+      <div class="reservation-info">
+        <fieldset id="personal-info">
+          <div class="personal-header">Personal Information</div>
+          <label for="first-name"
+            >First Name: <input id="first-name" type="text"
+          /></label>
+          <label for="last-name"
+            >Last Name: <input id="last-name" type="text"
+          /></label>
+          <label for="email"
+            >EMail: <input id="email" type="email" required
+          /></label>
+          <label for="address"
+            >Address: <input id="address" type="text"
+          /></label>
         </fieldset>
-       
-        <fieldset class="room-info-fieldset">
-            <div id="room-info-header">Room Information</div>
-            <label name="quantity-rooms">How Many Rooms
-                <select>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                </select>
-            </label>
-            
-            <label class="quantity-adults" for="quantity-adults">How Many Adults
-            <select name="quantity-of-adults" >
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
+      </div>
+
+      <div>
+        <fieldset id="room-info">
+          <div class="rooms-header">Room Information</div>
+          <label for="rooms"
+            >Number of Rooms:
+            <select id="rooms" name="rooms">
+              <option value="1">1</option>
+              <option value="2">2</option>
             </select>
-            </label>
-    
-            <label for="quantity-nights">How Many Nights
-            <select>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
+          </label>
+          <label for="adults"
+            >Number of Adults:
+            <select id="adults" name="adults">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
             </select>
-            </label>
+          </label>
+          <label for="nights"
+            >Number of Nights:
+            <select id="nights" name="nights">
+              <option value="1">1</option>
+              <option value="2">3</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </label>
         </fieldset>
+      </div>
+
+      <div class="title-block">
+        <div id="title">
+          <div>Three Rivers Resort</div>
         </div>
-    </body>
+        <div id="subtitle">
+          <div>"Pittsburg's Finest Luxery Destination"</div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
