@@ -1,0 +1,72 @@
+body {
+  background-image: url(/images/hotel.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+
+.info-title {
+  display: flex;
+}
+
+#title-block-container {
+  width: 65%;
+  padding-left: 70px;
+  color: rgba(0, 0, 0, 0.703);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.049);
+}
+
+#title {
+  font-size: 150px;
+}
+
+#subtitle {
+  font-size: 75px;
+  font-style: italic;
+}
+
+#personal-info-container,
+#room-info-container {
+  width: 13%;
+  padding-top: 20px;
+  padding-left: 10px;
+  font-weight: 530;
+}
+
+#room-info-container {
+  padding-left: 6px;
+}
+
+#personal-info,
+#room-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: none;
+  padding: none;
+  border: none;
+  width: 230px;
+  height: 250px;
+}
+
+#room-info {
+  width: 150px;
+}
+
+.rooms-header,
+.personal-header {
+  font-size: 20px;
+  font-weight: bold;
+  width: 190px;
+  color: rgba(0, 0, 0, 0.703);
+}
+
+#rooms,
+#adults,
+#nights {
+  width: 120px;
+}
+
+.submit {
+  width: 120px;
+  font-weight: bold;
+}
