@@ -26,7 +26,7 @@ body {
 
 #personal-info-container,
 #room-info-container {
-  width: 13%;
+  width: 100%;
   padding-top: 20px;
   padding-left: 10px;
   font-weight: 530;
@@ -50,23 +50,33 @@ body {
 
 #room-info {
   width: 150px;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .rooms-header,
 .personal-header {
+  width: 190px;
   font-size: 20px;
   font-weight: bold;
-  width: 190px;
   color: rgba(0, 0, 0, 0.703);
 }
 
 #rooms,
 #adults,
 #nights {
-  width: 120px;
+  width: 150px;
 }
 
 .submit {
-  width: 120px;
+  width: 150px;
   font-weight: bold;
+}
+
+.reservation-form {
+  display: flex;
+}
+
+.input-box {
+  width: 170px;
 }

@@ -11,63 +11,70 @@
 
   <body>
     <div class="info-title">
-      <div id="personal-info-container">
-        <fieldset id="personal-info">
-          <div class="personal-header">Personal Information</div>
-          <label for="first-name"
-            >First Name: <input id="first-name" type="text"
-          /></label>
-          <label for="last-name"
-            >Last Name: <input id="last-name" type="text" required
-          /></label>
-          <label for="email"
-            >E-Mail: <input id="email" type="email" required
-          /></label>
-          <label for="address"
-            >Address:
-            <input id="address" type="text" placeholder="Street" required />
-            <input type="text" placeholder="City, State, Zip"
-          /></label>
-        </fieldset>
-      </div>
+      <form class="reservation-form">
+        <div id="personal-info-container">
+          <fieldset id="personal-info">
+            <div class="personal-header">Personal Information</div>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" class="input-box" required />
+            <label for="last-name"
+              >Last Name:
+              <input id="last-name" class="input-box" type="text" required
+            /></label>
+            <label for="email"
+              >E-Mail: <input id="email" type="email" required
+            /></label>
+            <label for="address"
+              >Address:
+              <input
+                id="address"
+                class="input-box"
+                type="text"
+                placeholder="Street"
+                required />
+              <input type="text" placeholder="City, State, Zip" required
+            /></label>
+          </fieldset>
+        </div>
 
-      <div id="room-info-container">
-        <fieldset id="room-info">
-          <div class="rooms-header">Room Information</div>
-          <label for="rooms"
-            >Number of Rooms:
-            <select id="rooms" name="rooms">
-              <option value=""># of rooms</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-            </select>
-          </label>
-          <label for="adults"
-            >Number of Adults:
-            <select id="adults" name="adults">
-              <option value=""># of adults</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select>
-          </label>
-          <label for="nights"
-            >Number of Nights:
-            <select id="nights" name="nights">
-              <option value=""># of nights</option>
-              <option value="1">1</option>
-              <option value="2">3</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-            </select>
-          </label>
-          <button class="submit">Confirm Reservation</button>
-        </fieldset>
-      </div>
+        <div id="room-info-container">
+          <fieldset id="room-info">
+            <div class="rooms-header">Room Information</div>
+            <label for="rooms"
+              >Number of Rooms:
+              <select id="rooms" name="rooms" required>
+                <option value=""># of rooms</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </select>
+            </label>
+            <label for="adults"
+              >Number of Adults:
+              <select id="adults" name="adults" required>
+                <option value=""># of adults</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </label>
+            <label for="nights"
+              >Number of Nights:
+              <select id="nights" name="nights" required>
+                <option value=""># of nights</option>
+                <option value="1">1</option>
+                <option value="2">3</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+              </select>
+            </label>
+            <input type="submit" class="submit" value="Confirm Reservation" />
+          </fieldset>
+        </div>
+      </form>
 
       <div id="title-block-container">
         <div id="title">
